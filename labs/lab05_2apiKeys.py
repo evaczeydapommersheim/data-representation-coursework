@@ -2,7 +2,7 @@
 
 import requests
 import urllib.parse
-from config import config as cfg
+from config1 import config as cfg
 
 targetUrl = "https://en.wikipedia.org"
 apiKey = cfg["htmltopdfkey"]
