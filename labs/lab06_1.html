@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>View books</title>
@@ -5,14 +6,16 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
         crossorigin="anonymous">
+        <style>table, th, td {border: 1px solid black; border-style: double}</style>
     </head>
     <body>
         <h1>Books</h1>
         <div>
-            <button>Create a Book</button>
+            <button id="button-showCreate">Create a Book</button>
+            
         </div>
         <div>
-            <table class="table" border="1">
+            <table class="table" id="bookTable" border="1">
                 <tr>
                     <th>id</th>
                     <th>Title</th>
@@ -31,10 +34,10 @@
                 </tr>
             </table>
         </div>
-        <div>
+        <div id='createUpdateForm'>
             <h2>
                 <span>Create a</span>
-                <span style="display:none">Update this</span> Book
+                <span style="display:none">Update</span> Book
             </h2>  
             id <input type="text" name="id"><br/>
 
