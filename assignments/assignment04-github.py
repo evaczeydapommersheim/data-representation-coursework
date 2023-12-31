@@ -16,7 +16,7 @@ apikey = cfg["apiKey"]
 g = Github(apikey)
 
 # assigning text to file that is to be created in GitHub Repository:
-content = "This file is to include the word Andrew multiple time. Andrew gave is an assigment, where Andrew requires us to write code to replace the name Andrew with our own name."
+content = "This file is to include the word Andrew multiple times. Andrew gave us an assigment, where Andrew requires us to write code to replace the name Andrew with our own name."
 # accessing private repository
 repo = g.get_repo("evaczeydapommersheim/aprivateone")
 
